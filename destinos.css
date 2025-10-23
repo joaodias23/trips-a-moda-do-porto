@@ -1,0 +1,256 @@
+/*  Container principal  */
+.category-scroll {
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/*  Botões das setas  */
+.btn-arrow {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1.5px solid #0c74a8;
+  background-color: #fff;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 1px 4px rgba(12, 116, 168, 0.15);
+  cursor: pointer;
+}
+
+.btn-arrow i {
+  color: #0c74a8;
+  transition: color 0.25s ease-in-out;
+}
+
+.btn-arrow:hover {
+  background-color: #158cba;
+  border-color: #158cba;
+  box-shadow: 0 2px 6px rgba(21, 140, 186, 0.25);
+}
+
+.btn-arrow:hover i {
+  color: #faf7f3;
+}
+
+.btn-arrow:active {
+  transform: scale(0.95);
+}
+
+/*  Botões de categoria  */
+.btn-custom {
+  background-color: #ffffff;
+  border: 1.5px solid #0c74a8;
+  color: #0c74a8;
+  font-family: "Open Sans";
+  transition: all 0.25s ease-in-out;
+  border-radius: 30px;
+  padding: 8px 18px;
+  margin: 0 5px;
+  flex-shrink: 0;
+}
+
+.btn-custom:hover {
+  background-color: #158cba;
+  color: #faf7f3;
+  border-color: #158cba;
+  box-shadow: 0 2px 6px rgba(21, 140, 186, 0.25);
+}
+
+.btn-custom.active,
+.btn-custom:focus {
+  background-color: #158cba;
+  color: #faf7f3;
+  border-color: #158cba;
+  box-shadow: 0 0 0 4px rgba(21, 140, 186, 0.2);
+}
+
+.btn-custom:active {
+  transform: scale(0.97);
+}
+
+/*  responsivo */
+
+@media (max-width: 768px) {
+  .btn-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-custom {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+}
+
+/*  Cabeçalho de seção "Destinos"  */
+.section-header {
+  border-bottom: 1px solid rgba(12, 116, 168, 0.2);
+  padding-bottom: 8px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Open Sans";
+  color: #0c74a8;
+  letter-spacing: 0.5px;
+}
+
+.view-all-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: "Open Sans";
+  color: #158cba;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 6px 14px;
+  transition: all 0.25s ease-in-out;
+}
+
+.view-all-link:hover {
+  background-color: #158cba;
+  color: #faf7f3;
+  border-color: #158cba;
+  box-shadow: 0 2px 6px rgba(21, 140, 186, 0.25);
+}
+
+/* cards */
+
+.activity-card-hero {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 300px;
+  box-shadow: 0 4px 15px rgba(12, 116, 168, 0.15);
+}
+
+.activity-card-hero img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.activity-card-hero:hover img {
+  transform: scale(1.05);
+}
+
+.activity-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #faf7f3;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 20%,
+    rgba(0, 0, 0, 0.1) 70%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 18px;
+}
+
+.activity-info {
+  margin-top: auto;
+}
+
+.activity-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 25px;
+}
+
+.activity-location {
+  font-size: 0.95rem;
+  color: #e3e3e3;
+}
+
+.activity-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-text {
+  font-size: 0.95rem;
+}
+
+.reserve-btn {
+  background: #158cba;
+  color: #faf7f3;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 5px 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background: white;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  color: #0c74a8;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-btn:hover {
+  color: #158cba;
+  transform: scale(1.1);
+}
+
+.arrow-btn:focus,
+.arrow-btn:active {
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+.arrow-left,
+.arrow-right {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.carousel-container {
+  position: relative;
+}
