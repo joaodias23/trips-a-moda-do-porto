@@ -1,0 +1,1 @@
+parte João, um ficheiro.css para cada pagina de forma a tornar responsiva.

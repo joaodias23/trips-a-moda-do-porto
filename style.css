@@ -1,0 +1,15 @@
+:root {
+    --title-color: #2451A2;
+    --text-color: #54667A;
+    --button-color: #0C74A8;
+    --button-hover-color: #158CBA;
+    --button-text-color: #FAF7F3;
+    --background-color: #FAF7F3;
+    --footer-background-color: #064463ff;
+    --footer-text-color: #FAF7F3;
+    --font-general: 'Open Sans', sans-serif;
+}
+
+/* General variables */
+
+/* Index.html */
