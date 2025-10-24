@@ -1,0 +1,35 @@
+.contacts-section {
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+.contacts-title h2 {
+  font-family: var(--font-general);
+  color: var(--title-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contacts-title p {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.form-box {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.form-button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.form-button:hover {
+  background-color: var(--button-hover-color);
+}
