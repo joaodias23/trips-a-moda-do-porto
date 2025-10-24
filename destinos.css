@@ -254,3 +254,87 @@
 .carousel-container {
   position: relative;
 }
+
+/* ===== GRID DE CARDS ===== */
+.activity-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.activity-card {
+  flex: 0 0 calc((100% - 40px) / 3); /* 3 colunas com gap de 20px entre elas */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.activity-card.hide {
+  display: none !important;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+  .activity-card {
+    flex: 0 0 calc((100% - 20px) / 2); /* 2 por linha no tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .activity-card {
+    flex: 0 0 100%; /* 1 por linha no mobile */
+  }
+}
+
+/* ===== BOTÕES DO FILTRO ===== */
+.filter-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #0c74a8;
+  color: #0c74a8;
+  padding: 8px 18px;
+  margin: 0 6px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* hover */
+.filter-btn:hover {
+  background: #0c74a8;
+  color: #faf7f3;
+}
+
+/* botão ativo (selecionado) */
+.filter-btn.active {
+  background: #158cba;
+  border-color: #158cba;
+  color: #faf7f3;
+}
+
+/* ícone de seleção opcional */
+.filter-btn.active::after {
+  content: " ✓";
+  font-weight: bold;
+}
+
+/* quando desativado novamente */
+.filter-btn:not(.active) {
+  background: transparent;
+  color: #0c74a8;
+  border-color: #0c74a8;
+}
+
+/* ===== RESPONSIVIDADE DOS BOTÕES ===== */
+@media (max-width: 576px) {
+  .filter-btn {
+    padding: 5px 10px;
+    margin: 3px;
+    font-size: 13px;
+  }
+}
