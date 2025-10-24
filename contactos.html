@@ -18,97 +18,160 @@
 
     <!-- BOOTSTRAP IMPORTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!-- BOOTSTRAP IMPORTS -->
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">TMP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacotes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- form -->
-     <section class="contacts-section py-5">
-        <div class="container">
-          <div class="contacts-title text-center mb-5">
-            <h2>Contactos</h2>
-            <p>Fale connosco e comece a sonhar com a próxima viagem</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">TMP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Reservas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                  </li>
+              </ul>
           </div>
-            <div class="row gy-4">
-                <div class="col-lg-5">
+      </div>
+  </nav>
 
-                </div>
+  <!-- contactos -->
+  <section class="contacts-section py-5">
+    <div class="container">
+      <div class="contacts-title mb-5 text-center">
+        <h2>Entre em Contacto</h2>
+        <p>Estamos prontos para planear a sua próxima aventura</p>
+      </div>
 
-                <div class="col-lg-7">
-                    <div class="form-box">
-                        <div class="form-title">
-                            <h3>Envie mensagem a um dos nossos colaboradores</h1>
-                        </div>
-                        <form action="">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Nome</label>
-                                        <input type="text" name="name" class="form-control" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">E-mail</label>
-                                        <input type="email" name="email" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensagem</label>
-                                <textarea name="message" id="message" rows="5" class="form-control" required></textarea>
-                            </div>
-                            <button type="submit" class="form-button">
-                                Enviar
-                            </button>
-                        </form>
-                    </div>
-                </div>
+      <!-- informações contactos -->
+      <div class="row gy-4 mb-5">
 
-
+        <!-- 4 cards -->
+        <!-- 1-Morada -->
+        <!-- mobile default 12col, tablet(md) ocupa 6 das 12 colunas, desktop(lg) ocupa 3-->
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-card">
+            <!---- morada icon -->
+            <div class="contact-card-icon">
+              <i class="bi bi-geo-alt"></i>
             </div>
-     </div>
-
-     </section>
-
-    <div class="card text-center">
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!---- morada texto -->
+            <h4>Localização</h4>
+            <p>Rua de Ciríaco Cardoso 186,<br>4150-212 Porto</p>
+          </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- 2-Email -->
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-card">
+            <!---- email icon -->
+            <div class="contact-card-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <!---- email texto -->
+            <h4>E-mail</h4>
+            <p>tripsmodaporto@TMP.com</p>
+          </div>
+        </div>
+
+        <!-- 3-Telefone -->
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-card">
+            <!---- telefone icon -->
+            <div class="contact-card-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <!---- telefone texto -->
+            <h4>Telefone</h4>
+            <p>+351 255 123 321</p>
+          </div>
+        </div>
+
+        <!-- 4.Horário -->
+        <div class="col-md-6 col-lg-3">
+          <div class="contact-card">
+            <!---- horario icon -->
+            <div class="contact-card-icon">
+              <i class="bi bi-clock"></i>
+            </div>
+            <!---- horario texto -->
+            <h4>Horário</h4>
+            <p>Seg-Sex: 9h - 18h<br>Sáb: 9h - 13h</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row gy-4">
+        <!-- metade da row é o mapa e metade é o form col-lg-6, mobile vai ser 12 por default -->
+
+        <!-- Mapa -->
+        <div class="col-lg-6">
+          <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d529.0339853940922!2d-8.65011932056204!3d41.158441063762744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246582dfc5bc0b%3A0xafb574ffbf776e95!2sR.%20de%20Cir%C3%ADaco%20Cardoso%20205%2C%204150-214%20Porto!5e1!3m2!1spt-PT!2spt!4v1761318884036!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- form -->
+        <div class="col-lg-6">
+          <div class="form-box">
+            <h3 class="text-center">Envie mensagem a um dos nossos colaboradores</h3>
+            <form action="">
+              <div class="row">
+                <!-- row metade nome / metade email -->
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Nome" required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <textarea name="message" id="message" rows="8" placeholder="Mensagem" class="form-control" required></textarea>
+              </div>
+
+              <div class="text-end">
+                <button type="submit" class="form-button">
+                  Enviar mensagem
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="card text-center">
+      <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 
