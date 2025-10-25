@@ -89,7 +89,7 @@
 <div class="container mt-5">
   <div class="section-header d-flex justify-content-between align-items-center mb-3">
     <h3 class="section-title mb-0">Destinos</h3>
-    <a href="" target="_blank" class="view-all-link">
+    <a href="#" id="view-all" class="view-all-link">
       Veja tudo
     </a>
   </div>
@@ -168,7 +168,7 @@
         <!-- ===== CARD 3 ===== -->
     <div class="activity-card col" data-category="vidanoturna, gastronimia, atividadesaoarlivre">
       <div class="activity-card-hero">
-        <div id="carousel1" class="carousel slide">
+        <div id="carousel3" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Imagens_Destinos/RiodeJaneiro.jpg" alt="RiodeJaneiro">
@@ -177,10 +177,10 @@
               <img src="Imagens_Destinos/CristoRedentor.jpg" alt="CristoRedentor">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
             <span class="carousel-control-prev-icon custom-arrow"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
             <span class="carousel-control-next-icon custom-arrow"></span>
           </button>
         </div>
@@ -200,7 +200,7 @@
         <!-- ===== CARD 4 ===== -->
     <div class="activity-card col" data-category="locaisincriveisepoucoconhecidos, atiidadesaoarlivre">
       <div class="activity-card-hero">
-        <div id="carousel1" class="carousel slide">
+        <div id="carousel4" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Imagens_Destinos/BaliPraia.jpg" alt="PraiadeBali">
@@ -209,10 +209,10 @@
               <img src="Imagens_Destinos/BaliPlantacao.jpg" alt="BaliPlantacao">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
             <span class="carousel-control-prev-icon custom-arrow"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
             <span class="carousel-control-next-icon custom-arrow"></span>
           </button>
         </div>
@@ -232,7 +232,7 @@
         <!-- ===== CARD 5 ===== -->
     <div class="activity-card col" data-category="imperdiveis, vidanoturna">
       <div class="activity-card-hero">
-        <div id="carousel1" class="carousel slide">
+        <div id="carousel5" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Imagens_Destinos/TokioCidade.jpg" alt="CidadedeTokio">
@@ -241,10 +241,10 @@
               <img src="Imagens_Destinos/Tokio.jpg" alt="Tokio">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
             <span class="carousel-control-prev-icon custom-arrow"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
             <span class="carousel-control-next-icon custom-arrow"></span>
           </button>
         </div>
@@ -261,10 +261,10 @@
       </div>
     </div>
 
-        <!-- ===== CARD ===== -->
+        <!-- ===== CARD 6 ===== -->
     <div class="activity-card col" data-category="museus, gastronimia, adequadasparatodasasidades">
       <div class="activity-card-hero">
-        <div id="carousel1" class="carousel slide">
+        <div id="carousel6" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="Imagens_Destinos/GreciaRuinas.jpg" alt="RuinasGrecia">
@@ -273,10 +273,10 @@
               <img src="Imagens_Destinos/Atenas.jpg" alt="AtenasGrecia">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
             <span class="carousel-control-prev-icon custom-arrow"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
             <span class="carousel-control-next-icon custom-arrow"></span>
           </button>
         </div>
@@ -306,13 +306,14 @@
 document.addEventListener('DOMContentLoaded', function() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.activity-card');
+  const viewAllBtn = document.getElementById('view-all');
 
   let activeFilters = [];
 
+  // ===== FILTROS =====
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       const filter = button.dataset.filter.toLowerCase();
-
       button.classList.toggle('active');
 
       if (button.classList.contains('active')) {
@@ -330,17 +331,25 @@ document.addEventListener('DOMContentLoaded', function() {
         const categories = card.dataset.category
           .split(',')
           .map(c => c.trim().toLowerCase());
-
         const matches = activeFilters.some(f => categories.includes(f));
-
-        if (matches) card.classList.remove('hide');
-        else card.classList.add('hide');
+        card.classList.toggle('hide', !matches);
       });
     });
   });
+
+  // ===== BOTÃO "VEJA TUDO" =====
+  if (viewAllBtn) {
+    viewAllBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      activeFilters = [];
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+
+      cards.forEach(card => card.classList.remove('hide'));
+    });
+  }
 });
 </script>
-
 
 </body>
 
