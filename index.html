@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMP</title>
 
     <!-- CSS IMPORTS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <!-- CSS IMPORTS -->
 
     <!-- FONT IMPORT -->
@@ -17,60 +20,535 @@
 
     <!-- BOOTSTRAP IMPORTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- BOOTSTRAP IMPORTS -->
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">TMP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacotes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                </ul>
+
+    <!-- ################################################################## HERO SECTION ################################################################## -->
+
+    <div id="heroSection" class="position-relative">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+            
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="./index.html">TMP</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class="navbar-nav ms-auto">
+                        
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./destinos.html">Destinos</a></li>
+
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="pacotesDropdown" role="button"data-bs-toggle="dropdown" aria-expanded="false">Pacotes</a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="pacotesDropdown">
+
+                                <li><a class="dropdown-item" href="./pacotes/paraisotropical.html">Paraíso Tropical</a></li>
+
+                                <li><a class="dropdown-item" href="./pacotes/encantosdaeuropa.html">Encantos da Europa</a></li>
+
+                                <li><a class="dropdown-item" href="./pacotes/aventuranodeserto.html">Aventura no Deserto</a></li>
+
+                                <li><a class="dropdown-item" href="./pacotes/naturezaetradicao.html">Natureza e Tradição</a></li>
+                            
+                            </ul>
+
+                        </li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="./reservas.html">Reservas</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="./contactos.html">Contacto</a></li>
+                    
+                    </ul>
+
+                </div>
+
             </div>
+
+        </nav>
+
+        <div id="heroContent" class="position-absolute">
+
+            <h1 id="heroTitle">Trips À Moda Do Porto</h1>
+
+            <p id="heroSubtitle">Melhor do que comer, só viver.</p>
+
+            <a href="#packages"><button id="heroButton">Ver Pacotes</button></a>
+
         </div>
-    </nav>
-    <!-- Logo, Destinos, Reservas, Blog, Contacto -->
 
-    <!-- Banner Background + Title -->
+        <img src="./imagensIndex/pexels-quang-nguyen-vinh-222549-2131623.jpg" class="img-fluid" alt="landingPageBanner" id="heroBanner">
 
-    <!-- 4 Cards Pacotes -->
-        <!-- paraisotropical -->
-        <!-- encantosdaeuropa -->
-        <!-- aventuranodeserto -->
-        <!-- naturezaetradição -->
-
-    <!-- Points text explaining the business -->
-        <!-- explanation: 4 easy steps: 1.---- 2.----- 3.---- 4.------ -->
-
-    <!-- 4 cards with popular destinies -->
-
-    <div class="card text-center">
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
     </div>
+
+    <!-- ################################################################## HERO SECTION ################################################################## -->
+
+    <!-- ################################################################## PACKAGES SECTION ################################################################## -->
+
+    <section id="packages" class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="section-title mb-3">Pacotes Especiais</h2>
+
+                <p class="section-subtitle mx-auto">Temos uma vasta gama de pacotes que pode usufruir e ter uma ótima desculpa para deixar as crianças em casa.</p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <a href="./pacotes/paraisotropical.html" style="text-decoration: none;"><div class="card package-card h-100">
+                        
+                        <div class="package-img-wrapper">
+                            
+                            <img src="./imagensIndex/tropical.png" class="card-img-top package-img" alt="Pacote Tropical">
+                        
+                        </div>
+                        
+                        <div class="card-body">
+                            
+                            <h3 class="package-title">Paraíso Tropical</h3>
+                            
+                            <p class="package-description">Um pacote incrível para praias paradisíacas e aventuras tropicais.</p>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                                <span class="package-price">€2,200 (<strike>€5,999</strike>)</span>
+                                
+                                <button class="btn package-btn">RESERVAR JÁ</button>
+                            
+                            </div>
+
+                        </div></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <a href="./pacotes/encantosdaeuropa.html" style="text-decoration: none;"><div class="card package-card h-100">
+
+                        <div class="package-img-wrapper">
+
+                            <img src="./imagensIndex/encantoseuropa.png" class="card-img-top package-img" alt="Pacote Europa">
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="package-title">Encantos da Europa</h3>
+
+                            <p class="package-description">Com sorte apaixona-se por um belo português charmoso, só não traga o marido.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="package-price">€2,699 (<strike>€7,999</strike>)</span>
+
+                                <button class="btn package-btn">RESERVAR JÁ</button>
+
+                            </div>
+
+                        </div></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <a href="./pacotes/aventuranodeserto.html" style="text-decoration: none;"><div class="card package-card h-100">
+
+                        <div class="package-img-wrapper">
+
+                            <img src="./imagensIndex/deserto.png" class="card-img-top package-img" alt="Pacote Deserto">
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="package-title">Aventura no Deserto</h3>
+
+                            <p class="package-description">Viva experiências únicas com risco de sede extrema, não há garantia que volte.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="package-price">€5 (<strike>€999</strike>)</span>
+
+                                <button class="btn package-btn">RESERVAR P/ SOGRA</button>
+
+                            </div>
+
+                        </div></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <a href="./pacotes/naturezaetradicao.html" style="text-decoration: none;"><div class="card package-card h-100">
+
+                        <div class="package-img-wrapper">
+
+                            <img src="./imagensIndex/natureza.png" class="card-img-top package-img" alt="Pacote Natureza">
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <h3 class="package-title">Natureza e Tradição</h3>
+
+                            <p class="package-description">Explore paisagens naturais e a cultura local de forma autêntica.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="package-price">€3,159 (<strike>€9,999</strike>)</span>
+
+                                <button class="btn package-btn">RESERVAR JÁ</button>
+
+                            </div>
+
+                        </div></a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ################################################################## PACKAGES SECTION ################################################################## -->
+
+    <!-- ################################################################## STEPS SECTION ################################################################## -->
+
+    <section id="steps" class="py-5 bg-white">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="section-title mb-3">Como Funciona</h2>
+
+                <p class="section-subtitle mx-auto">4 passos simples para planear a aventura dos seus sonhos.</p>
+
+            </div>
+
+            <div class="row g-4 text-center">
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="step-card">
+
+                        <div class="step-icon mb-3"><span class="step-icon-circle"><i class="bi bi-search"></i></span></div>
+
+                        <div class="step-number mb-2">Passo 1</div>
+
+                        <h3 class="step-title mb-2">Escolha o Destino</h3>
+
+                        <p class="step-description">Selecione entre os destinos mais incríveis ou menos incríveis que oferecemos.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="step-card">
+
+                        <div class="step-icon mb-3"><span class="step-icon-circle"><i class="bi bi-calendar-check"></i></span></div>
+
+                        <div class="step-number mb-2">Passo 2</div>
+
+                        <h3 class="step-title mb-2">Escolha um Pacote</h3>
+
+                        <p class="step-description">Escolha o pacote que melhor se adapta ao seu estilo de viagem. Se for um camelo, o deserto é ideal.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="step-card">
+
+                        <div class="step-icon mb-3"><span class="step-icon-circle"><i class="bi bi-credit-card"></i></span></div>
+
+                        <div class="step-number mb-2">Passo 3</div>
+
+                        <h3 class="step-title mb-2">Pagamento Seguro</h3>
+
+                        <p class="step-description">Finalize sua reserva de forma rápida e segura. Iremos ficar com os dados do seu cartão.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="step-card">
+
+                        <div class="step-icon mb-3"><span class="step-icon-circle"><i class="bi bi-airplane"></i></span></div>
+
+                        <div class="step-number mb-2">Passo 4</div>
+
+                        <h3 class="step-title mb-2">Aproveite a Viagem</h3>
+
+                        <p class="step-description">Prepare-se para viver experiências inesquecíveis!</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ################################################################## STEPS SECTION ################################################################## -->
+
+    <!-- ################################################################## DESTINOS SECTION ################################################################## -->
+
+    <section id="destinos" class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                
+                <h2 class="section-title mb-3">Destinos Populares</h2>
+
+                <p class="section-subtitle mx-auto">Descubra os destinos mais procurados e planeie a sua próxima ou última aventura.</p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="destination-card overflow-hidden rounded-lg shadow-lg position-relative">
+
+                        <img src="./Imagens_Destinos/BaliPraia.jpg" class="img-fluid destination-img" alt="Bali">
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-info p-3">
+
+                            <div class="d-flex align-items-center gap-2 mb-1"><i class="bi bi-geo-alt-fill"></i><span class="destination-country">Indonésia</span></div>
+
+                            <h3 class="destination-name mb-1">Bali</h3>
+
+                            <p class="destination-tours mb-0">12 tours disponíveis</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="destination-card overflow-hidden rounded-lg shadow-lg position-relative">
+
+                        <img src="./Imagens_Destinos/Paris.jpg" class="img-fluid destination-img" alt="Paris">
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-info p-3">
+
+                            <div class="d-flex align-items-center gap-2 mb-1"><i class="bi bi-geo-alt-fill"></i><span class="destination-country">França</span></div>
+
+                            <h3 class="destination-name mb-1">Paris</h3>
+
+                            <p class="destination-tours mb-0">8 tours disponíveis</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="destination-card overflow-hidden rounded-lg shadow-lg position-relative">
+
+                        <img src="./Imagens_Destinos/Londres.jpg" class="img-fluid destination-img" alt="Londres">
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-info p-3">
+
+                            <div class="d-flex align-items-center gap-2 mb-1"><i class="bi bi-geo-alt-fill"></i><span class="destination-country">Reino Unido</span></div>
+
+                            <h3 class="destination-name mb-1">Londres</h3>
+
+                            <p class="destination-tours mb-0">10 tours disponíveis</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="destination-card overflow-hidden rounded-lg shadow-lg position-relative">
+
+                        <img src="./Imagens_Destinos/Atenas.jpg" class="img-fluid destination-img" alt="Atenas">
+
+                        <div class="destination-overlay"></div>
+
+                        <div class="destination-info p-3">
+                            
+                            <div class="d-flex align-items-center gap-2 mb-1"><i class="bi bi-geo-alt-fill"></i><span class="destination-country">Grécia</span></div>
+
+                            <h3 class="destination-name mb-1">Atenas</h3>
+
+                            <p class="destination-tours mb-0">9 tours disponíveis</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ################################################################## DESTINOS SECTION ################################################################## -->
+
+    <!-- ################################################################## CTA SECTION ################################################################## -->
+
+    <section id="cta" class="py-5" style="background-color: var(--title-color);">
+
+        <div class="container text-center text-white">
+
+            <h2 class="mb-3">Pronto para a sua Próxima ou Última Aventura?</h2>
+
+            <p class="mb-4" style="font-size: 1.125rem; color: rgba(255,255,255,0.9);">Entre em contacto connosco e deixe-nos ajudá-lo a planear a viagem perfeita (como quem diz).</p>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+
+                <a href="./reservas.html" class="btn btn-primary px-4 py-2">Reservar</a>
+
+                <a href="./contactos.html" class="btn btn-light text-primary px-4 py-2">Contactar-nos</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ################################################################## CTA SECTION ################################################################## -->
+
+    <!-- ################################################################## FOOTER SECTION ################################################################## -->
+
+    <footer class="pt-5 pb-3" style="background-color: var(--footer-background-color); color: var(--footer-text-color);">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-3">
+
+                    <h3 class="fw-bold mb-3">TMP</h3>
+
+                    <p class="text-white-50">A sua agência de viagens de confiança duvidosa para explorar o mundo.</p>
+
+                    <div class="d-flex gap-3">
+
+                        <a href="#" class="text-white-50 hover:text-primary"><i class="bi bi-facebook"></i></a>
+
+                        <a href="#" class="text-white-50 hover:text-primary"><i class="bi bi-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <h5 class="mb-3">Links Rápidos</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="./destinos.html" class="text-white-50 text-decoration-none">Destinos</a></li>
+
+                        <li><a href="./reservas.html" class="text-white-50 text-decoration-none">Reservas</a></li>
+
+                        <li><a href="./blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
+
+                        <li><a href="./contactos.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <h5 class="mb-3">Serviços</h5>
+
+                    <ul class="list-unstyled text-white-50">
+
+                        <li>Pacotes Turísticos</li>
+
+                        <li>Reservas de Hotéis</li>
+
+                        <li>Aluguer de Carros</li>
+
+                        <li>Seguros de Viagem</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-3">
+
+                    <h5 class="mb-3">Contacto</h5>
+
+                    <ul class="list-unstyled text-white-50">
+
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-telephone"></i> +351 911 911 911</li>
+
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-envelope"></i> tripas@porto.com</li>
+
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-geo-alt-fill"></i> PUORTO, Portugal</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="border-top border-white-50 mt-4 pt-3 text-center">
+                
+                <p class="mb-0" style="color: rgba(255,255,255,0.6);">© 2025 TMPAgency. Todos ou alguns dos direitos reservados.</p>
+
+            </div>
+
+        </div>
+        
+    </footer>
+    
+    <!-- ################################################################## FOOTER SECTION ################################################################## -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

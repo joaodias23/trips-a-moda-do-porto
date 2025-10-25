@@ -1,0 +1,101 @@
+/* ################################################################## GENERAL ################################################################## */
+
+* {margin: 0; padding: 0;}
+body {font-family: var(--font-general);}
+
+/* ################################################################## GENERAL ################################################################## */
+
+/* ################################################################## HERO SECTION ################################################################## */
+
+.navbar {background: rgba(255, 255, 255, 0.85) !important; backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); transition: background 0.3s ease, box-shadow 0.3s ease; font-family: var(--font-general); z-index: 5;}
+.navbar-brand {font-weight: 800; color: var(--title-color) !important; letter-spacing: 1px; font-size: 2.5rem !important; margin-left: 10px;}
+.navbar-brand:hover {color: #00a4d6 !important;}
+.navbar-nav {margin-right: 50px;}
+.nav-link {color: var(--text-color) !important; margin: 0 0.8rem; font-weight: 600; position: relative; transition: color 0.3s ease; font-size: 1.2rem !important;}
+.nav-link:hover {color: #00a4d6 !important;}
+.navbar-toggler {border: none;}
+#heroSection {position: relative;}
+#heroBanner {height: 80vh !important; width: 100%; object-fit: cover;}
+#heroSection::before {content: ""; position: absolute; top: 0; left: 0; width: 100%;height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 1;}
+#heroContent {display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; z-index: 2;}
+#heroTitle {font-size: 5rem; margin-bottom: 1rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+#heroSubtitle {font-size: 1.7rem; margin-bottom: 2rem; max-width: 700px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+#heroButton {padding: 1rem 2.5rem; font-size: 1.3rem; background: var(--button-color); color: white; border: none; border-radius: 10px; font-weight: 600;}
+
+/* ################################################################## HERO SECTION ################################################################## */
+
+/* ################################################################## PACKAGES SECTION ################################################################## */
+
+.section-title {color: var(--title-color); font-size: 2rem; font-weight: 700;}
+.section-subtitle {color: var(--text-color); font-size: 1rem; max-width: 600px;}
+#packages {background-color: var(--background-color);}
+#packages .package-card {border-radius: 12px; overflow: hidden; box-shadow: 0 6px 30px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; height: 100%;}
+#packages .package-card:hover {transform: translateY(-7px); box-shadow: 0 12px 40px rgba(0,0,0,0.15);}
+.package-img-wrapper {overflow: hidden; width: 100%; aspect-ratio: 4/3;}
+.package-img {width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;}
+.package-img-wrapper:hover .package-img {transform: scale(1.1);}
+.package-card .card-body {flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;}
+.package-title {font-size: 1.3rem; font-weight: 600; margin-bottom: 0.75rem;}
+.package-description {font-size: 1.1rem; color: var(--text-color); margin-bottom: 1rem; flex-grow: 1;}
+.package-price {font-size: 1.3rem; font-weight: 700; color: var(--title-color);}
+.package-btn {padding: 0.75rem 1.75rem; font-size: 1rem; border-radius: 10px; background-color: var(--button-color); color: var(--button-text-color); border: none; transition: background-color 0.3s;}
+.package-btn:hover {background-color: var(--button-hover-color);}
+
+/* ################################################################## PACKAGES SECTION ################################################################## */
+
+/* ################################################################## STEPS SECTION ################################################################## */
+
+#steps .section-title {color: var(--title-color); font-size: 2rem; font-weight: 700;}
+#steps .section-subtitle {color: var(--text-color); font-size: 1rem; max-width: 600px; margin: 0 auto;}
+.step-card {padding: 1.5rem 1rem; transition: transform 0.3s, box-shadow 0.3s;}
+.step-card:hover {transform: translateY(-5px);}
+.step-icon-circle {display: inline-flex; justify-content: center; align-items: center; width: 60px; height: 60px; background-color: var(--button-color); color: var(--button-text-color); border-radius: 50%; font-size: 1.5rem;}
+.step-number {display: inline-block; background-color: var(--title-color); color: var(--button-text-color); padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 600;}
+.step-title {color: var(--title-color); font-size: 1.25rem; font-weight: 700;}
+.step-description {color: var(--text-color); font-size: 0.95rem;}
+
+/* ################################################################## STEPS SECTION ################################################################## */
+
+/* ################################################################## DESTINOS SECTION ################################################################## */
+
+#destinos {background-color: var(--background-color);}
+#destinos .section-title {color: var(--title-color); font-size: 2rem; font-weight: 700;}
+#destinos .section-subtitle {color: var(--text-color); font-size: 1rem; max-width: 600px; margin: 0 auto;}
+.destination-card {border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; height: 100%;}
+.destination-card .destination-img {width: 100%; height: 180px; object-fit: cover; transition: transform 0.3s;}
+.destination-card:hover {transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1);}
+.destination-card .card-body {flex: 1; display: flex; flex-direction: column; justify-content: flex-start;}
+.destination-overlay {position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);}
+.destination-info {position: absolute; bottom: 0; left: 0; right: 0; color: white;}
+.destination-country {font-size: 0.875rem;}
+.destination-name {font-size: 1.25rem; font-weight: 700; color: white;}
+.destination-tours {font-size: 0.875rem; color: rgba(255,255,255,0.8);}
+
+/* ################################################################## DESTINOS SECTION ################################################################## */
+
+/* ################################################################## CTA SECTION ################################################################## */
+
+#cta h2 {font-size: 2rem; font-weight: 700;}
+#cta p {max-width: 600px; margin: 0 auto 1.5rem auto;}
+#cta .btn-primary {background-color: var(--button-color); border: none; font-weight: 600;}
+#cta .btn-primary:hover {background-color: var(--button-hover-color);}
+#cta .btn-light {background-color: #fff; font-weight: 600;}
+#cta .btn-light:hover {background-color: #f0f0f0;}
+footer a {transition: color 0.3s ease;}
+footer a:hover {color: var(--button-hover-color);}
+footer h3, footer h5 {color: var(--footer-text-color);}
+footer p, footer li {font-size: 0.9rem;}
+footer i {font-size: 1rem;}
+
+/* ################################################################## CTA SECTION ################################################################## */
+
+@media (max-width: 768px) {
+    #heroTitle {font-size: 2.5rem;}
+    #heroSubtitle {font-size: 1.3rem; max-width: 95%;}
+}
+
+@media (max-width: 576px) {
+    #heroTitle {font-size: 2rem;}
+    #heroSubtitle {font-size: 1.1rem;}
+    #heroButton {padding: 0.8rem 2rem; font-size: 1.1rem;}
+    }
