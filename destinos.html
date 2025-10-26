@@ -1,356 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TMP</title>
 
     <!-- FONT IMPORT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- FONT IMPORT -->
 
     <!-- BOOTSTRAP IMPORTS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- BOOTSTRAP IMPORTS -->
 
     <!-- CSS IMPORTS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="destinos.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destinos.css" />
     <!-- CSS IMPORTS -->
+  </head>
 
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+  <body>
+    <div id="heroSection" class="position-relative">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TMP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacotes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+          <a class="navbar-brand" href="./index.html">TMP</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./destinos.html"
+                  >Destinos</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="pacotesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pacotes</a
+                >
+
+                <ul class="dropdown-menu" aria-labelledby="pacotesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/paraisotropical.html"
+                      >Paraíso Tropical</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/encantosdaeuropa.html"
+                      >Encantos da Europa</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/aventuranodeserto.html"
+                      >Aventura no Deserto</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/naturezaetradicao.html"
+                      >Natureza e Tradição</a
+                    >
+                  </li>
                 </ul>
-            </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-<section>
-<div class="container my-3">
-  <div class="d-flex align-items-center">
-    <!-- Botão de voltar -->
-    <button class="btn btn-outline-success btn-arrow scroll-left">
-      <i class="bi bi-chevron-left"></i>
-    </button>
+      <div id="heroContent" class="position-absolute">
+        <h1 id="heroTitle">Escolha o melhor destino para si</h1>
 
-    <!-- Barra rolável -->
-    <div class="flex-grow-1 overflow-auto category-scroll d-flex gap-2 px-2">
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="imperdiveis">Imperdíveis</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="adequadasparatodasasidades">Adequadas para todas as idades</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="locaisincriveisepoucoconhecidos">Locais incríveis e pouco conhecidos</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="museus">Museus</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="atiidadesaoarlivre">Atividades ao ar livre</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="arteseteatro">Artes e teatro</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="vidanoturna">Vida noturna</button>
-      <button class="btn btn-custom filter-btn flex-shrink-0" data-filter="gastronomia">Gastronomia</button>
+        <p id="heroSubtitle">Aproveite nossas promoções especiais.</p>
+      </div>
+
+      <img
+        src="Imagens_Destinos/aviao.jpg"
+        class="img-fluid"
+        alt="aviao"
+        id="heroBanner"
+      />
     </div>
-
-    <!-- Botão de avançar -->
-    <button class="btn btn-outline-success btn-arrow scroll-right">
-      <i class="bi bi-chevron-right"></i>
-    </button>
-  </div>
-</div>
-
-</section>
-
-<!-- barra de Destinos -->
-<section>
-<div class="container mt-5">
-  <div class="section-header d-flex justify-content-between align-items-center mb-3">
-    <h3 class="section-title mb-0">Destinos</h3>
-    <a href="#" id="view-all" class="view-all-link">
-      Veja tudo
-    </a>
-  </div>
-</div>
-
-</section>
-
-<!--CARDS-->
-<section>
-<div class="container my-5">
-  <div class="activity-grid">
-    <!-- ===== CARD 1 ===== -->
-    <div class="activity-card col" data-category="imperdiveis, adequadasparatodasasidades, museus, gastronomia, arteeteatro">
-      <div class="activity-card-hero">
-        <div id="carousel1" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens_Destinos/Paris.jpg" alt="Paris">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagens_Destinos/Paris02.jpg" alt="ParisCity">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon custom-arrow"></span>
+    <section>
+      <div class="container my-3">
+        <div class="d-flex align-items-center">
+          <!-- Botão de voltar -->
+          <button class="btn btn-outline-success btn-arrow scroll-left">
+            <i class="bi bi-chevron-left"></i>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-            <span class="carousel-control-next-icon custom-arrow"></span>
+
+          <!-- Barra rolável -->
+          <div
+            class="flex-grow-1 overflow-auto category-scroll d-flex gap-2 px-2"
+          >
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="imperdiveis"
+            >
+              Imperdíveis
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="adequadasparatodasasidades"
+            >
+              Adequadas para todas as idades
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="locaisincriveisepoucoconhecidos"
+            >
+              Locais incríveis e pouco conhecidos
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="museus"
+            >
+              Museus
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="atiidadesaoarlivre"
+            >
+              Atividades ao ar livre
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="arteseteatro"
+            >
+              Artes e teatro
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="vidanoturna"
+            >
+              Vida noturna
+            </button>
+            <button
+              class="btn btn-custom filter-btn flex-shrink-0"
+              data-filter="gastronomia"
+            >
+              Gastronomia
+            </button>
+          </div>
+
+          <!-- Botão de avançar -->
+          <button class="btn btn-outline-success btn-arrow scroll-right">
+            <i class="bi bi-chevron-right"></i>
           </button>
-        </div>
-        <div class="activity-overlay">
-          <div class="activity-info">
-            <h5 class="activity-title">Paris</h5>
-            <p class="activity-location">França</p>
-          </div>
-          <div class="activity-price">
-            <span class="price-text">A partir de <strong>80€</strong></span>
-            <a href="#" class="reserve-btn">Reservar</a>
-          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ===== CARD 2 ===== -->
-    <div class="activity-card col" data-category="adequadasparatodasasidades, museus, imperdiveis">
-      <div class="activity-card-hero">
-        <div id="carousel2" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens_Destinos/Londres02.jpg" alt="Londres">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagens_Destinos/Londres.jpg" alt="LondresPonte">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon custom-arrow"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-            <span class="carousel-control-next-icon custom-arrow"></span>
-          </button>
-        </div>
-        <div class="activity-overlay">
-          <div class="activity-info">
-            <h5 class="activity-title">Londres</h5>
-            <p class="activity-location">Inglaterra</p>
-          </div>
-          <div class="activity-price">
-            <span class="price-text">A partir de <strong>120€</strong></span>
-            <a href="#" class="reserve-btn">Reservar</a>
-          </div>
+    <!-- barra de Destinos -->
+    <section>
+      <div class="container mt-5">
+        <div
+          class="section-header d-flex justify-content-between align-items-center mb-3"
+        >
+          <h3 class="section-title mb-0">Destinos</h3>
+          <a href="#" id="view-all" class="view-all-link"> Veja tudo </a>
         </div>
       </div>
-    </div>
+    </section>
 
-        <!-- ===== CARD 3 ===== -->
-    <div class="activity-card col" data-category="vidanoturna, gastronimia, atividadesaoarlivre">
-      <div class="activity-card-hero">
-        <div id="carousel3" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens_Destinos/RiodeJaneiro.jpg" alt="RiodeJaneiro">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagens_Destinos/CristoRedentor.jpg" alt="CristoRedentor">
+    <!--CARDS-->
+    <section>
+      <div class="container my-5">
+        <div class="activity-grid">
+          <!-- ===== CARD 1 ===== -->
+          <div
+            class="activity-card col"
+            data-category="imperdiveis, adequadasparatodasasidades, museus, gastronomia, arteeteatro"
+          >
+            <div class="activity-card-hero">
+              <div id="carousel1" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagens_Destinos/Paris.jpg" alt="Paris" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagens_Destinos/Paris02.jpg" alt="ParisCity" />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon custom-arrow"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon custom-arrow"></span>
+                </button>
+              </div>
+              <div class="activity-overlay">
+                <div class="activity-info">
+                  <h5 class="activity-title">Paris</h5>
+                  <p class="activity-location">França</p>
+                </div>
+                <div class="activity-price">
+                  <span class="price-text"
+                    >A partir de <strong>80€</strong></span
+                  >
+                  <a href="#" class="reserve-btn">Reservar</a>
+                </div>
+              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon custom-arrow"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
-            <span class="carousel-control-next-icon custom-arrow"></span>
-          </button>
+
+          <!-- ===== CARD 2 ===== -->
+          <div
+            class="activity-card col"
+            data-category="adequadasparatodasasidades, museus, imperdiveis"
+          >
+            <div class="activity-card-hero">
+              <div id="carousel2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagens_Destinos/Londres02.jpg" alt="Londres" />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Imagens_Destinos/Londres.jpg"
+                      alt="LondresPonte"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon custom-arrow"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel2"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon custom-arrow"></span>
+                </button>
+              </div>
+              <div class="activity-overlay">
+                <div class="activity-info">
+                  <h5 class="activity-title">Londres</h5>
+                  <p class="activity-location">Inglaterra</p>
+                </div>
+                <div class="activity-price">
+                  <span class="price-text"
+                    >A partir de <strong>120€</strong></span
+                  >
+                  <a href="#" class="reserve-btn">Reservar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CARD 3 ===== -->
+          <div
+            class="activity-card col"
+            data-category="vidanoturna, gastronimia, atividadesaoarlivre"
+          >
+            <div class="activity-card-hero">
+              <div id="carousel3" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Imagens_Destinos/RiodeJaneiro.jpg"
+                      alt="RiodeJaneiro"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Imagens_Destinos/CristoRedentor.jpg"
+                      alt="CristoRedentor"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel3"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon custom-arrow"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel3"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon custom-arrow"></span>
+                </button>
+              </div>
+              <div class="activity-overlay">
+                <div class="activity-info">
+                  <h5 class="activity-title">Rio de Janeiro</h5>
+                  <p class="activity-location">Brasil</p>
+                </div>
+                <div class="activity-price">
+                  <span class="price-text"
+                    >A partir de <strong>750€</strong></span
+                  >
+                  <a href="#" class="reserve-btn">Reservar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CARD 4 ===== -->
+          <div
+            class="activity-card col"
+            data-category="locaisincriveisepoucoconhecidos, atiidadesaoarlivre"
+          >
+            <div class="activity-card-hero">
+              <div id="carousel4" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Imagens_Destinos/BaliPraia.jpg"
+                      alt="PraiadeBali"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Imagens_Destinos/BaliPlantacao.jpg"
+                      alt="BaliPlantacao"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel4"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon custom-arrow"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel4"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon custom-arrow"></span>
+                </button>
+              </div>
+              <div class="activity-overlay">
+                <div class="activity-info">
+                  <h5 class="activity-title">Bali</h5>
+                  <p class="activity-location">Indonésia</p>
+                </div>
+                <div class="activity-price">
+                  <span class="price-text"
+                    >A partir de <strong>350€</strong></span
+                  >
+                  <a href="#" class="reserve-btn">Reservar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CARD 5 ===== -->
+          <div
+            class="activity-card col"
+            data-category="imperdiveis, vidanoturna"
+          >
+            <div class="activity-card-hero">
+              <div id="carousel5" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Imagens_Destinos/TokioCidade.jpg"
+                      alt="CidadedeTokio"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagens_Destinos/Tokio.jpg" alt="Tokio" />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel5"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon custom-arrow"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel5"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon custom-arrow"></span>
+                </button>
+              </div>
+              <div class="activity-overlay">
+                <div class="activity-info">
+                  <h5 class="activity-title">Tokio</h5>
+                  <p class="activity-location">Japão</p>
+                </div>
+                <div class="activity-price">
+                  <span class="price-text"
+                    >A partir de <strong>1200€</strong></span
+                  >
+                  <a href="#" class="reserve-btn">Reservar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CARD 6 ===== -->
+          <div
+            class="activity-card col"
+            data-category="museus, gastronimia, adequadasparatodasasidades"
+          >
+            <div class="activity-card-hero">
+              <div id="carousel6" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Imagens_Destinos/GreciaRuinas.jpg"
+                      alt="RuinasGrecia"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagens_Destinos/Atenas.jpg" alt="AtenasGrecia" />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel6"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon custom-arrow"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel6"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon custom-arrow"></span>
+                </button>
+              </div>
+              <div class="activity-overlay">
+                <div class="activity-info">
+                  <h5 class="activity-title">Atenas</h5>
+                  <p class="activity-location">Grécia</p>
+                </div>
+                <div class="activity-price">
+                  <span class="price-text"
+                    >A partir de <strong>110€</strong></span
+                  >
+                  <a href="#" class="reserve-btn">Reservar</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="activity-overlay">
-          <div class="activity-info">
-            <h5 class="activity-title">Rio de Janeiro</h5>
-            <p class="activity-location">Brasil</p>
+       
+      </div>
+      
+    </section>
+    
+
+    <!--  FOOTER SECTION  -->
+
+    <footer
+      class="pt-5 pb-3"
+      style="
+        background-color: var(--footer-background-color);
+        color: var(--footer-text-color);
+      "
+    >
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-3">
+            <h3 class="fw-bold mb-3">TMP</h3>
+
+            <p class="text-white-50">
+              A sua agência de viagens de confiança duvidosa para explorar o
+              mundo.
+            </p>
+
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white-50 hover:text-primary"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <a href="#" class="text-white-50 hover:text-primary"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
           </div>
-          <div class="activity-price">
-            <span class="price-text">A partir de <strong>750€</strong></span>
-            <a href="#" class="reserve-btn">Reservar</a>
+
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">Links Rápidos</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./destinos.html"
+                  class="text-white-50 text-decoration-none"
+                  >Destinos</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="./reservas.html"
+                  class="text-white-50 text-decoration-none"
+                  >Reservas</a
+                >
+              </li>
+
+              <li>
+                <a href="./blog.html" class="text-white-50 text-decoration-none"
+                  >Blog</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="./contactos.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
           </div>
+
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">Serviços</h5>
+
+            <ul class="list-unstyled text-white-50">
+              <li>Pacotes Turísticos</li>
+
+              <li>Reservas de Hotéis</li>
+
+              <li>Aluguer de Carros</li>
+
+              <li>Seguros de Viagem</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">Contacto</h5>
+
+            <ul class="list-unstyled text-white-50">
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone"></i> +351 911 911 911
+              </li>
+
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope"></i> tripas@porto.com
+              </li>
+
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-geo-alt-fill"></i> PUORTO, Portugal
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-top border-white-50 mt-4 pt-3 text-center">
+          <p class="mb-0" style="color: rgba(255, 255, 255, 0.6)">
+            © 2025 TMPAgency. Todos ou alguns dos direitos reservados.
+          </p>
         </div>
       </div>
-    </div>
+    </footer>
 
-        <!-- ===== CARD 4 ===== -->
-    <div class="activity-card col" data-category="locaisincriveisepoucoconhecidos, atiidadesaoarlivre">
-      <div class="activity-card-hero">
-        <div id="carousel4" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens_Destinos/BaliPraia.jpg" alt="PraiadeBali">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagens_Destinos/BaliPlantacao.jpg" alt="BaliPlantacao">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon custom-arrow"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
-            <span class="carousel-control-next-icon custom-arrow"></span>
-          </button>
-        </div>
-        <div class="activity-overlay">
-          <div class="activity-info">
-            <h5 class="activity-title">Bali</h5>
-            <p class="activity-location">Indonésia</p>
-          </div>
-          <div class="activity-price">
-            <span class="price-text">A partir de <strong>350€</strong></span>
-            <a href="#" class="reserve-btn">Reservar</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- FOOTER SECTION -->
 
-        <!-- ===== CARD 5 ===== -->
-    <div class="activity-card col" data-category="imperdiveis, vidanoturna">
-      <div class="activity-card-hero">
-        <div id="carousel5" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens_Destinos/TokioCidade.jpg" alt="CidadedeTokio">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagens_Destinos/Tokio.jpg" alt="Tokio">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon custom-arrow"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
-            <span class="carousel-control-next-icon custom-arrow"></span>
-          </button>
-        </div>
-        <div class="activity-overlay">
-          <div class="activity-info">
-            <h5 class="activity-title">Tokio</h5>
-            <p class="activity-location">Japão</p>
-          </div>
-          <div class="activity-price">
-            <span class="price-text">A partir de <strong>1200€</strong></span>
-            <a href="#" class="reserve-btn">Reservar</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-        <!-- ===== CARD 6 ===== -->
-    <div class="activity-card col" data-category="museus, gastronimia, adequadasparatodasasidades">
-      <div class="activity-card-hero">
-        <div id="carousel6" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens_Destinos/GreciaRuinas.jpg" alt="RuinasGrecia">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagens_Destinos/Atenas.jpg" alt="AtenasGrecia">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon custom-arrow"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
-            <span class="carousel-control-next-icon custom-arrow"></span>
-          </button>
-        </div>
-        <div class="activity-overlay">
-          <div class="activity-info">
-            <h5 class="activity-title">Atenas</h5>
-            <p class="activity-location">Grécia</p>
-          </div>
-          <div class="activity-price">
-            <span class="price-text">A partir de <strong>110€</strong></span>
-            <a href="#" class="reserve-btn">Reservar</a>
-          </div>
-        </div>
-      </div>
-    </div>
- </section>
+    <!-- ===== SCRIPT DO BOTÃO IMAGENS ===== -->
+    <script>
+      const scrollContainer = document.querySelector(".category-scroll");
+      document.querySelector(".scroll-left").onclick = () =>
+        scrollContainer.scrollBy({ left: -200, behavior: "smooth" });
+      document.querySelector(".scroll-right").onclick = () =>
+        scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
+    </script>
 
- <!-- ===== SCRIPT DO BOTÃO IMAGENS ===== -->
- <script>
-  const scrollContainer = document.querySelector('.category-scroll');
-  document.querySelector('.scroll-left').onclick = () => scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
-  document.querySelector('.scroll-right').onclick = () => scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
-</script>
+    <!-- ===== SCRIPT DO FILTRO ===== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".activity-card");
+        const viewAllBtn = document.getElementById("view-all");
 
- <!-- ===== SCRIPT DO FILTRO ===== -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.activity-card');
-  const viewAllBtn = document.getElementById('view-all');
+        let activeFilters = [];
 
-  let activeFilters = [];
+        // ===== FILTROS =====
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const filter = button.dataset.filter.toLowerCase();
+            button.classList.toggle("active");
 
-  // ===== FILTROS =====
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.dataset.filter.toLowerCase();
-      button.classList.toggle('active');
+            if (button.classList.contains("active")) {
+              activeFilters.push(filter);
+            } else {
+              activeFilters = activeFilters.filter((f) => f !== filter);
+            }
 
-      if (button.classList.contains('active')) {
-        activeFilters.push(filter);
-      } else {
-        activeFilters = activeFilters.filter(f => f !== filter);
-      }
+            if (activeFilters.length === 0) {
+              cards.forEach((card) => card.classList.remove("hide"));
+              return;
+            }
 
-      if (activeFilters.length === 0) {
-        cards.forEach(card => card.classList.remove('hide'));
-        return;
-      }
+            cards.forEach((card) => {
+              const categories = card.dataset.category
+                .split(",")
+                .map((c) => c.trim().toLowerCase());
+              const matches = activeFilters.some((f) => categories.includes(f));
+              card.classList.toggle("hide", !matches);
+            });
+          });
+        });
 
-      cards.forEach(card => {
-        const categories = card.dataset.category
-          .split(',')
-          .map(c => c.trim().toLowerCase());
-        const matches = activeFilters.some(f => categories.includes(f));
-        card.classList.toggle('hide', !matches);
+        // ===== BOTÃO "VEJA TUDO" =====
+        if (viewAllBtn) {
+          viewAllBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            activeFilters = [];
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+            cards.forEach((card) => card.classList.remove("hide"));
+          });
+        }
       });
-    });
-  });
-
-  // ===== BOTÃO "VEJA TUDO" =====
-  if (viewAllBtn) {
-    viewAllBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      activeFilters = [];
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-
-      cards.forEach(card => card.classList.remove('hide'));
-    });
-  }
-});
-</script>
-
-</body>
-
+    </script>
+  </body>
 </html>
