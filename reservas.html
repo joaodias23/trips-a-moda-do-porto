@@ -1,68 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TMP</title>
 
-    <!-- CSS IMPORTS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reservas.css">
-    <!-- CSS IMPORTS -->
-
     <!-- FONT IMPORT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- FONT IMPORT -->
 
     <!-- BOOTSTRAP IMPORTS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- BOOTSTRAP IMPORTS -->
 
-</head>
+    <!-- CSS IMPORTS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reservas.css" />
+    <!-- CSS IMPORTS -->
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+  <body>
+    <!-- HERO / NAVBAR -->
+    <div id="heroSection" class="position-relative">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TMP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacotes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
+          <a class="navbar-brand" href="./index.html">TMP</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="./destinos.html">Destinos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="pacotesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pacotes</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="pacotesDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/paraisotropical.html"
+                      >Paraíso Tropical</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/encantosdaeuropa.html"
+                      >Encantos da Europa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/aventuranodeserto.html"
+                      >Aventura no Deserto</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pacotes/naturezaetradicao.html"
+                      >Natureza e Tradição</a
+                    >
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-   
-    <!-- Form -->
-
-    <div class="card text-center">
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+      </nav>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-</body>
+    <!-- FORM SECTION -->
+    <div class="reserva-section">
+      <div class="container">
+        <section class="card p-4 shadow-lg backdrop-blur rounded-4">
+          <h1 class="h4 mb-3">Reserve sua viagem — Paris</h1>
+          <p class="text-secondary mb-4">
+            Preencha os dados abaixo para confirmar a reserva. O preço indicado
+            é por pessoa.
+          </p>
 
+          <form id="reservaForm" autocomplete="on" class="row g-3">
+            <div class="col-12">
+              <label for="nome" class="form-label" class="form-control"
+                >Nome completo</label
+              >
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                class="form-control"
+                placeholder="João da Silva"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label" class="form-control"
+                >E-mail</label
+              >
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form-control"
+                placeholder="seu@exemplo.com"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="contacto" class="form-label" class="form-control"
+                >Contacto (telefone)</label
+              >
+              <input
+                id="contacto"
+                name="contacto"
+                type="tel"
+                class="form-control"
+                placeholder="+55 11 91234-5678"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="doc" class="form-label" class="form-control" required
+                >Passaporte ou ID</label
+              >
+              <input
+                id="doc"
+                name="doc"
+                type="text"
+                class="form-control"
+                placeholder="AA1234567 / 12345678"
+                required
+              />
+            </div>
+
+            <div class="col-md-3">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input
+                id="cidade"
+                name="cidade"
+                type="text"
+                class="form-control"
+                value="Paris"
+                readonly
+              />
+            </div>
+
+            <div class="col-md-3">
+              <label for="pais" class="form-label">País</label>
+              <input
+                id="pais"
+                name="pais"
+                type="text"
+                class="form-control"
+                value="França"
+                readonly
+              />
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Preço</label>
+              <div
+                class="d-flex justify-content-between align-items-center border rounded p-2 fw-semibold"
+              >
+                <span>80€</span>
+                <small class="text-secondary">+ taxas aplicáveis</small>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="pagamento" class="form-label"
+                >Forma de pagamento</label
+              >
+              <select
+                id="pagamento"
+                name="pagamento"
+                class="form-select"
+                required
+              >
+                <option value="">Escolha uma opção</option>
+                <option>Boleto</option>
+                <option>Débito (cartão)</option>
+                <option>Crédito (cartão)</option>
+                <option>PIX</option>
+                <option>Transferência bancária</option>
+                <option>PayPal</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  class="form-check-input"
+                  required
+                />
+                <label for="terms" class="form-check-label">
+                  Li e concordo com os
+                  <a href="#">termos e condições</a> e a
+                  <a href="#">política de privacidade</a>.
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn-formulario">
+                Confirmar Reserva
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer
+      class="pt-5 pb-3"
+      style="
+        background-color: var(--footer-background-color);
+        color: var(--footer-text-color);
+      "
+    >
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-3">
+            <h3 class="fw-bold mb-3">TMP</h3>
+            <p class="text-white-50">
+              A sua agência de viagens de confiança duvidosa para explorar o
+              mundo.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white-50 hover:text-primary"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white-50 hover:text-primary"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./destinos.html"
+                  class="text-white-50 text-decoration-none"
+                  >Destinos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./reservas.html"
+                  class="text-white-50 text-decoration-none"
+                  >Reservas</a
+                >
+              </li>
+              <li>
+                <a href="./blog.html" class="text-white-50 text-decoration-none"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contactos.html"
+                  class="text-white-50 text-decoration-none"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">Serviços</h5>
+            <ul class="list-unstyled text-white-50">
+              <li>Pacotes Turísticos</li>
+              <li>Reservas de Hotéis</li>
+              <li>Aluguer de Carros</li>
+              <li>Seguros de Viagem</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <h5 class="mb-3">Contacto</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-telephone"></i> +351 911 911 911
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-envelope"></i> tripas@porto.com
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-geo-alt-fill"></i> PUORTO, Portugal
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-top border-white-50 mt-4 pt-3 text-center">
+          <p class="mb-0" style="color: rgba(255, 255, 255, 0.6)">
+            © 2025 TMPAgency. Todos ou alguns dos direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const form = document.getElementById("reservaForm");
+      form.addEventListener("submit", (ev) => {
+        ev.preventDefault();
+        if (!form.reportValidity()) return;
+        const nome = document.getElementById("nome").value;
+        alert(
+          `Reserva efetuada com sucesso e enviado ao seu e-mail!\nNome: ${nome}\nDestino: Paris, França`
+        );
+      });
+    </script>
+
+    <script>
+      const form = document.getElementById("formReserva");
+      const popup = document.getElementById("popupConfirmacao");
+      const btnFechar = document.getElementById("btnFechar");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // impede envio do formulário
+        popup.style.display = "flex"; // mostra o popup
+      });
+
+      btnFechar.addEventListener("click", function () {
+        popup.style.display = "none"; // esconde o popup
+        form.reset(); // limpa o formulário (opcional)
+      });
+
+      // Fecha o popup clicando fora
+      popup.addEventListener("click", function (e) {
+        if (e.target === popup) popup.style.display = "none";
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,178 @@
+body {
+  background: url("Imagens_Destinos/the-louvre-originally.jpg") center/cover
+    no-repeat fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----NaBar-----*/
+
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-general);
+  z-index: 5;
+}
+.navbar-brand {
+  font-weight: 800;
+  color: var(--title-color) !important;
+  letter-spacing: 1px;
+  font-size: 2.5rem !important;
+  margin-left: 10px;
+}
+.navbar-brand:hover {
+  color: #00a4d6 !important;
+}
+.navbar-nav {
+  margin-right: 50px;
+}
+.nav-link {
+  color: var(--text-color) !important;
+  margin: 0 0.8rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 1.2rem !important;
+}
+.nav-link:hover {
+  color: #00a4d6 !important;
+}
+.navbar-toggler {
+  border: none;
+}
+
+/*  CTA SECTION  */
+
+#cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#cta p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+#cta .btn-primary {
+  background-color: var(--button-color);
+  border: none;
+  font-weight: 600;
+}
+#cta .btn-primary:hover {
+  background-color: var(--button-hover-color);
+}
+#cta .btn-light {
+  background-color: #fff;
+  font-weight: 600;
+}
+#cta .btn-light:hover {
+  background-color: #f0f0f0;
+}
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--button-hover-color);
+}
+footer h3,
+footer h5 {
+  color: var(--footer-text-color);
+}
+footer p,
+footer li {
+  font-size: 0.9rem;
+}
+footer i {
+  font-size: 1rem;
+}
+
+/* Formlario de reserva */
+
+.reserva-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.reserva-section .container {
+  max-width: 480px;
+  width: 100%;
+  margin: 10%;
+}
+
+.card {
+  backdrop-filter: blur(8px);
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans";
+  background-color: #faf7f3e3;
+}
+
+.summary {
+  background: rgba(33, 37, 41, 0.918);
+  backdrop-filter: blur(6px);
+}
+
+.btn-formulario {
+  background: #0c74a8;
+  width: 100%;
+  border-radius: 35px;
+  font-family: "Open Sans";
+  color: white;
+  border: none;
+  height: 50px;
+}
+
+.btn-formulario:hover {
+  background: #158cba;
+  width: 100%;
+  border-radius: 35px;
+  font-family: "Open Sans";
+  color: white;
+  border: none;
+  height: 50px;
+}
+
+/* Popup */
+.popup {
+  display: none; /* escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsivo — centraliza no mobile */
+@media (max-width: 992px) {
+  .reserva-section {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+  }
+
+  .reserva-section .container {
+    max-width: 90%;
+  }
+}
