@@ -1,232 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ################################################################## GENERAL ################################################################## */
 
-body {
-  font-family: var(--font-general);
-  background-color: var(--background-color);
-}
+* {margin: 0; padding: 0;}
+body {font-family: var(--font-general); background-color: var(--background-color);}
 
+/* ################################################################## GENERAL ################################################################## */
 
-.page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--title-color);
-}
+/* ################################################################## HERO SECTION ################################################################## */
 
+.navbar {background: rgba(255, 255, 255, 0.85) !important; backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); transition: background 0.3s ease, box-shadow 0.3s ease; font-family: var(--font-general); z-index: 5;}
+.navbar-brand {font-weight: 800; color: var(--title-color) !important; letter-spacing: 1px; font-size: 2.5rem !important; margin-left: 10px;}
+.navbar-brand:hover {color: #00a4d6 !important;}
+.navbar-nav {margin-right: 50px;}
+.nav-link {color: var(--text-color) !important; margin: 0 0.8rem; font-weight: 600; position: relative; transition: color 0.3s ease; font-size: 1.2rem !important;}
+.nav-link:hover {color: #00a4d6 !important;}
+.navbar-toggler {border: none;}
+.hero-card {margin-top: 50px; position: relative; height: 450px; background-image: url("https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?cs=srgb&dl=pexels-te-lensfix-380994-1371360.jpg&fm=jpg"); background-size: cover; background-position: center -400px; background-repeat: no-repeat; border-radius: 12px; overflow: hidden;}
+.hero-overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.1) 100%); display: flex; align-items: flex-end;}
+.hero-content {color: var(--background-color); padding: 40px; width: 100%;}
+.hero-content .badge {background-color: var(--button-color); color: white; padding: 6px 12px; font-size: 0.85rem; font-weight: 500; text-transform: capitalize;}
+.hero-content .date-badge {background-color: rgba(255, 255, 255, 0.2); color: white; padding: 6px 12px; font-size: 0.85rem; margin-left: 10px; border-radius: 4px; display: inline-block;}
+.hero-title {font-size: 2.2rem; font-weight: 700; margin: 15px 0; line-height: 1.3;}
+.hero-description {font-size: 1.05rem; line-height: 1.6; margin: 0; max-width: 900px; opacity: 0.95;}
 
-/* Artigo destaque */
+/* ################################################################## HERO SECTION ################################################################## */
 
+/* ################################################################## MAIN SECTION ################################################################## */
 
+.blog-grid {background-color: #ffffff;}
+.blog-card {border: none; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.blog-card:hover {transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);}
+.blog-card .card-img-top {height: 220px; object-fit: cover;}
+.blog-card .card-body {padding: 20px;}
+.category-badge {background-color: var(--button-color); color: white; padding: 4px 10px; font-size: 0.75rem; font-weight: 500; text-transform: capitalize; border-radius: 4px;}
+.blog-card .card-title {font-size: 1.1rem; font-weight: 600; color: #2c3e50; line-height: 1.4; margin-top: 10px; margin-bottom: 0;}
+.author-info {border-top: 1px solid #ecf0f1; padding-top: 15px;}
+.author-info img {width: 40px; height: 40px; object-fit: cover;}
+.author-name {font-size: 0.9rem; font-weight: 600; color: #2c3e50;}
+.post-date {font-size: 0.8rem; color: #7f8c8d;}
+.pagination {gap: 5px;}
+.page-link {color: #2c3e50; border: 1px solid #dee2e6; border-radius: 8px; padding: 8px 14px; font-weight: 500; transition: all 0.3s ease;}
+.page-link:hover {background-color: var(--button-color); color: white; border-color: var(--button-color)f;}
+.page-item.active .page-link {background-color: var(--button-color); border-color: var(--button-color); color: white;}
+.page-item.disabled .page-link {color: #adb5bd; background-color: transparent;}
 
-.hero-card {
-  position: relative;
-  height: 450px;
-  background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=450&fit=crop');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  overflow: hidden;
-}
+/* ################################################################## MAIN SECTION ################################################################## */
 
-/* caixa para conteudo sobreposto */
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.1) 100%);
-  display: flex;
-  align-items: flex-end;
-}
+/* ################################################################## FOOTER SECTION ################################################################## */
 
+footer a {transition: color 0.3s ease;}
+footer a:hover {color: var(--button-hover-color);}
+footer h3, footer h5 {color: var(--footer-text-color);}
+footer p, footer li {font-size: 0.9rem;}
+footer i {font-size: 1rem;}
 
-.hero-content {
-  color: var(--background-color);
-  padding: 40px;
-  width: 100%;
-}
+/* ################################################################## FOOTER SECTION ################################################################## */
 
-
-
-.hero-content .badge {
-    background-color: #e76f51;
-    color: white;
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.hero-content .date-badge {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    margin-left: 10px;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.hero-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin: 15px 0;
-    line-height: 1.3;
-}
-
-.hero-description {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin: 0;
-    max-width: 900px;
-    opacity: 0.95;
-}
-
-/* Blog Grid Section */
-.blog-grid {
-    background-color: #ffffff;
-}
-
-.blog-card {
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.blog-card .card-img-top {
-    height: 220px;
-    object-fit: cover;
-}
-
-.blog-card .card-body {
-    padding: 20px;
-}
-
-.category-badge {
-    background-color: #2a9d8f;
-    color: white;
-    padding: 4px 10px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    border-radius: 4px;
-}
-
-.blog-card .card-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #2c3e50;
-    line-height: 1.4;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.author-info {
-    border-top: 1px solid #ecf0f1;
-    padding-top: 15px;
-}
-
-.author-info img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
-.author-name {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-.post-date {
-    font-size: 0.8rem;
-    color: #7f8c8d;
-}
-
-/* Pagination */
-.pagination {
-    gap: 5px;
-}
-
-.page-link {
-    color: #2c3e50;
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    padding: 8px 14px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.page-link:hover {
-    background-color: #2a9d8f;
-    color: white;
-    border-color: #2a9d8f;
-}
-
-.page-item.active .page-link {
-    background-color: #2a9d8f;
-    border-color: #2a9d8f;
-    color: white;
-}
-
-.page-item.disabled .page-link {
-    color: #adb5bd;
-    background-color: transparent;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-    .page-title {
-        font-size: 2rem;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-card {
-        height: 400px;
-    }
-
-    .hero-content {
-        padding: 30px;
-    }
+    .page-title {font-size: 2rem;}
+    .hero-title {font-size: 1.8rem;}
+    .hero-description {font-size: 1rem;}
+    .hero-card {height: 400px; background-position: center -150px;}
+    .hero-content {padding: 30px;}
 }
 
 @media (max-width: 576px) {
-    .page-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .hero-description {
-        font-size: 0.9rem;
-    }
-
-    .hero-card {
-        height: 350px;
-    }
-
-    .hero-content {
-        padding: 25px;
-    }
+    .page-title {font-size: 1.8rem;}
+    .hero-title {font-size: 1.5rem;}
+    .hero-description {font-size: 0.9rem;}
+    .hero-card {height: 350px; background-position: center center; background-size: cover;}
+    .hero-content {padding: 25px;}
 }
