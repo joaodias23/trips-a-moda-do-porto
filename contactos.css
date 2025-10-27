@@ -1,103 +1,154 @@
-.contacts-section {
-  background-color: var(--background-color);
-  height: 100vh;
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("Imagens_Destinos/aviao.jpg") center/cover no-repeat fixed;
 }
 
-.contacts-title h2 {
+/*-----NaBar-----*/
+
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   font-family: var(--font-general);
-  color: var(--title-color);
-  font-weight: 700;
-  margin-bottom: 10px;
+  z-index: 5;
+}
+.navbar-brand {
+  font-weight: 800;
+  color: var(--title-color) !important;
+  letter-spacing: 1px;
+  font-size: 2.5rem !important;
+  margin-left: 10px;
+}
+.navbar-brand:hover {
+  color: #00a4d6 !important;
+}
+.navbar-nav {
+  margin-right: 50px;
+}
+.nav-link {
+  color: var(--text-color) !important;
+  margin: 0 0.8rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 1.2rem !important;
+}
+.nav-link:hover {
+  color: #00a4d6 !important;
+}
+.navbar-toggler {
+  border: none;
 }
 
-.contacts-title p {
-  font-size: 20px;
-  color: var(--text-color);
+/* contactos */
+
+.contacts-section {
+  padding: 4rem 5rem;
 }
 
-/* ---detalhes contacto */
-.contact-card {
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 10px;
+.contacts-inner {
+  background-color: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #0056b3;
+}
+
+.titulo {
+  font-family: "Open Sans";
+  font-size: 41px;
+  font-weight: bolder;
+  color: #0056b3;
   text-align: center;
-  height: 100%;
+}
+
+.texto-secundario {
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #0056b3;
+  text-align: center;
+}
+
+/* Responsivo: padding menor em telas pequenas */
+@media (max-width: 768px) {
+  .contacts-inner {
+    padding: 2rem;
+  }
+}
+
+.contact-row {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .contact-card-icon {
-  width: 60px;
-  height: 60px;
-  background-color: var(--button-color);
-  color: white;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  font-size: 24px;
+  font-size: 2rem;
+  color: var(--primary-color, #007bff);
+  margin-bottom: 0.5rem;
 }
 
-.contact-card h4 {
-  font-family: var(--font-general);
-  color: var(--title-color);
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 10px;
+.map-frame {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-
-.contact-card p {
-  color: var(--text-color);
-  margin: 0;
-  font-weight: 600;
-}
-
-
-/* --- Mapa */
-.map-box{
-  border-radius: 10px;
-  /* overflow: hidden;
-  height: 100%; */
-}
-
-.map-box iframe {
-  width: 100%;
-  height: 450px;
-  border: 0;
-}
-
 
 .form-box {
-  background-color: white;
-  padding: 40px 30px;
-  border-radius: 10px;
-  height: 100%;
-  color: var(--text-color);
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
-
-.form-box h3 {
-  font-family: var(--font-general);
-  color: var(--title-color);
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.form-box .form-control {
-  padding: 12px 15px;
-  border: 1px solid var(--text-color);
-  border-radius: 20px;
-  font-size: 15px;
-  font-family: var(--font-general);
-}
-
 
 .form-button {
-  background-color: var(--button-color);
-  color: var(--button-text-color);
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 20px;
-  padding: 8px 18px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
 .form-button:hover {
-  background-color: var(--button-hover-color);
+  background-color: #0056b3;
+}
+
+/* footer */
+
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--button-hover-color);
+}
+footer h3,
+footer h5 {
+  color: var(--footer-text-color);
+}
+footer p,
+footer li {
+  font-size: 0.9rem;
+}
+footer i {
+  font-size: 1rem;
 }
