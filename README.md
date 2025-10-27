@@ -4,11 +4,9 @@ TMP - trips à moda do porto
 Não feito: X
 Feito: T
 
-Joana - blog.html X blog.css X contactos.html X contactos.css X
+Sandro - destinos.html X destinos.css X reservas.html X reservas.css X contactos X
 
-Sandro - destinos.html X destinos.css X reservas.html X reservas.css X (melhor começar pelos destinos pq as reservas precisa de um form que a Joana vai fazer igual)
-
-João - index T pacotes T responsividade
+João - index T pacotes T responsividade T Blog T
 
 ##############################################################################
 
