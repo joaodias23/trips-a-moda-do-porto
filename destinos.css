@@ -44,9 +44,10 @@
   position: relative;
 }
 #heroBanner {
-  height: 80vh !important;
+  height: 50vh !important;
   width: 100%;
   object-fit: cover;
+  object-position: center -280px;
 }
 #heroSection::before {
   content: "";
