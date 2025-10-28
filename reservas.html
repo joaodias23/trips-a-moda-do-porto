@@ -16,8 +16,16 @@
     <!-- FONT IMPORT -->
 
     <!-- BOOTSTRAP IMPORTS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <!-- BOOTSTRAP IMPORTS -->
 
     <!-- CSS IMPORTS -->
@@ -27,7 +35,7 @@
   </head>
 
   <body>
-    <!-- HERO / NAVBAR -->
+    <!-- NAVBAR -->
     <div id="heroSection" class="position-relative">
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
         <div class="container-fluid">
@@ -106,21 +114,54 @@
       </nav>
     </div>
 
-    <!-- FORM SECTION -->
-    <div class="reserva-section">
+    <!-- FORMULARIO DE RESERVA -->
+    <div class="reserva-section py-5">
       <div class="container">
-        <section class="card p-4 shadow-lg backdrop-blur rounded-4">
-          <h1 class="h4 mb-3">Reserve sua viagem — Paris</h1>
+        <section class="card p-4 shadow-lg rounded-4">
+          <h1 class="h3 fw-bold text-primary mb-3">Reserve sua viagem - PARÍS</h1>
           <p class="text-secondary mb-4">
             Preencha os dados abaixo para confirmar a reserva. O preço indicado
             é por pessoa.
           </p>
 
-          <form id="reservaForm" autocomplete="on" class="row g-3">
-            <div class="col-12">
-              <label for="nome" class="form-label" class="form-control"
-                >Nome completo</label
+          <form id="reservaForm" class="row g-4">
+            <div class="col-md-4">
+              <label for="dataPartida" class="form-label"
+                >Data de Partida</label
               >
+              <input
+                id="dataPartida"
+                name="dataPartida"
+                type="date"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="col-md-4">
+              <label for="dataVolta" class="form-label">Data de Volta</label>
+              <input
+                id="dataVolta"
+                name="dataVolta"
+                type="date"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="col-md-4">
+              <label for="pessoas" class="form-label">Número de Pessoas</label>
+              <select id="pessoas" name="pessoas" class="form-select">
+                <option value="1">1 Pessoa</option>
+                <option value="2" selected>2 Pessoas</option>
+                <option value="3">3 Pessoas</option>
+                <option value="4">4 Pessoas</option>
+              </select>
+            </div>
+
+            <!-- DADOS PESSOAIS  -->
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome completo</label>
               <input
                 id="nome"
                 name="nome"
@@ -130,11 +171,8 @@
                 required
               />
             </div>
-
             <div class="col-md-6">
-              <label for="email" class="form-label" class="form-control"
-                >E-mail</label
-              >
+              <label for="email" class="form-label">E-mail</label>
               <input
                 id="email"
                 name="email"
@@ -144,9 +182,8 @@
                 required
               />
             </div>
-
             <div class="col-md-6">
-              <label for="contacto" class="form-label" class="form-control"
+              <label for="contacto" class="form-label"
                 >Contacto (telefone)</label
               >
               <input
@@ -158,11 +195,8 @@
                 required
               />
             </div>
-
             <div class="col-md-6">
-              <label for="doc" class="form-label" class="form-control" required
-                >Passaporte ou ID</label
-              >
+              <label for="doc" class="form-label">Passaporte ou ID</label>
               <input
                 id="doc"
                 name="doc"
@@ -173,40 +207,7 @@
               />
             </div>
 
-            <div class="col-md-3">
-              <label for="cidade" class="form-label">Cidade</label>
-              <input
-                id="cidade"
-                name="cidade"
-                type="text"
-                class="form-control"
-                value="Paris"
-                readonly
-              />
-            </div>
-
-            <div class="col-md-3">
-              <label for="pais" class="form-label">País</label>
-              <input
-                id="pais"
-                name="pais"
-                type="text"
-                class="form-control"
-                value="França"
-                readonly
-              />
-            </div>
-
-            <div class="col-12">
-              <label class="form-label">Preço</label>
-              <div
-                class="d-flex justify-content-between align-items-center border rounded p-2 fw-semibold"
-              >
-                <span>80€</span>
-                <small class="text-secondary">+ taxas aplicáveis</small>
-              </div>
-            </div>
-
+            <!-- FORMA DE PAGAMENTO -->
             <div class="col-12">
               <label for="pagamento" class="form-label"
                 >Forma de pagamento</label
@@ -227,8 +228,31 @@
               </select>
             </div>
 
+            <!-- RESUMO DE PREÇO -->
             <div class="col-12">
-              <div class="form-check">
+              <div class="price-summary border rounded p-3">
+                <div class="d-flex justify-content-between">
+                  <span class="text-secondary subtotal-label"
+                    >€80 x 2 pessoa(s)</span
+                  >
+                  <span class="text-secondary subtotal-value">€160</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span class="text-secondary">Taxa de serviço</span>
+                  <span class="text-secondary">€10</span>
+                </div>
+                <div class="d-flex justify-content-between border-top pt-2">
+                  <span class="text-primary fw-bold">Total</span>
+                  <span class="text-primary fw-bold fs-5 total-final"
+                    >€170</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- TERMOS E BOTÃO -->
+            <div class="col-12">
+              <div class="form-check mb-3">
                 <input
                   type="checkbox"
                   id="terms"
@@ -236,23 +260,36 @@
                   required
                 />
                 <label for="terms" class="form-check-label">
-                  Li e concordo com os
-                  <a href="#">termos e condições</a> e a
+                  Li e concordo com os <a href="#">termos e condições</a> e a
                   <a href="#">política de privacidade</a>.
                 </label>
               </div>
-            </div>
-
-            <div class="col-12">
-              <button type="submit" class="btn-formulario">
-                Confirmar Reserva
-              </button>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Reservar Agora
+                </button>
+                <p class="text-secondary small mt-2">
+                  <i class="bi bi-check-circle-fill text-success me-1"></i>
+                  Cancelamento gratuito até 30 dias antes
+                </p>
+              </div>
             </div>
           </form>
         </section>
       </div>
     </div>
 
+    <!-- POPUP DE SUCESSO -->
+    <div id="popupSucesso" class="popup-overlay">
+      <div class="popup-card">
+        <div class="popup-icon">
+          <i class="bi bi-check-circle-fill"></i>
+        </div>
+        <h3>Reserva realizada com sucesso!</h3>
+        <p>Enviamos um e-mail com os detalhes da sua viagem.</p>
+        <button id="fecharPopup" class="btn btn-primary">OK</button>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer
@@ -347,38 +384,35 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-      const form = document.getElementById("reservaForm");
-      form.addEventListener("submit", (ev) => {
-        ev.preventDefault();
-        if (!form.reportValidity()) return;
-        const nome = document.getElementById("nome").value;
-        alert(
-          `Reserva efetuada com sucesso e enviado ao seu e-mail!\nNome: ${nome}\nDestino: Paris, França`
-        );
-      });
-    </script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("reservaForm");
+        const popup = document.getElementById("popupSucesso");
+        const fechar = document.getElementById("fecharPopup");
 
-    <script>
-      const form = document.getElementById("formReserva");
-      const popup = document.getElementById("popupConfirmacao");
-      const btnFechar = document.getElementById("btnFechar");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault(); // impede envio do formulário
-        popup.style.display = "flex"; // mostra o popup
-      });
+          // Simula o envio (aqui você pode adicionar o fetch ou AJAX real)
+          setTimeout(() => {
+            popup.classList.add("show");
+          }, 500);
+        });
 
-      btnFechar.addEventListener("click", function () {
-        popup.style.display = "none"; // esconde o popup
-        form.reset(); // limpa o formulário (opcional)
-      });
+        fechar.addEventListener("click", () => {
+          popup.classList.remove("show");
+          form.reset();
+        });
 
-      // Fecha o popup clicando fora
-      popup.addEventListener("click", function (e) {
-        if (e.target === popup) popup.style.display = "none";
+        popup.addEventListener("click", (e) => {
+          if (e.target === popup) popup.classList.remove("show");
+        });
       });
     </script>
   </body>
