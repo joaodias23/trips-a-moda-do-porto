@@ -13,47 +13,6 @@
 
 .contacts-section {
   background-color: var(--background-color);
-  height: 100vh;
-}
-
-/*-----NaBar-----*/
-
-.navbar {
-  background: transparent;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  font-family: var(--font-general);
-  z-index: 5;
-}
-.navbar-brand {
-  font-weight: 800;
-  color: var(--title-color) !important;
-  letter-spacing: 1px;
-  font-size: 2.5rem !important;
-  margin-left: 10px;
-}
-.navbar-brand:hover {
-  color: #00a4d6 !important;
-}
-.navbar-nav {
-  margin-right: 50px;
-}
-.nav-link {
-  color: var(--text-color) !important;
-  margin: 0 0.8rem;
-  font-weight: 600;
-  position: relative;
-  transition: color 0.3s ease;
-  font-size: 1.2rem !important;
-}
-.nav-link:hover {
-  color: #00a4d6 !important;
-}
-.navbar-toggler {
-  border: none;
 }
 
 /* contactos */

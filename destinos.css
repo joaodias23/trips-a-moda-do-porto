@@ -365,15 +365,47 @@
 }
 
 /* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1440px) {
+   #heroBanner {
+    height: 50vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 1024px) {
+   #heroBanner {
+    height: 50vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 @media (max-width: 992px) {
   .activity-card {
     flex: 0 0 calc((100% - 20px) / 2); /* 2 por linha no tablet */
+  }
+  #heroBanner {
+    height: 50vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
 @media (max-width: 600px) {
   .activity-card {
     flex: 0 0 100%; /* 1 por linha no mobile */
+  }
+  #heroTitle {
+    font-size: 25px;
+    max-width: 100%;
+  }
+  #heroSubtitle {
+    font-size: 15px;
+    max-width: 100%;
   }
 }
 
