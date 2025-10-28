@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {background: rgba(255, 255, 255, 0.85) !important; backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); transition: background 0.3s ease, box-shadow 0.3s ease; font-family: var(--font-general); z-index: 5;}
+.navbar-brand {font-weight: 800; color: var(--title-color) !important; letter-spacing: 1px; font-size: 2.5rem !important; margin-left: 10px;}
+.navbar-brand:hover {color: #00a4d6 !important;}
+.navbar-nav {margin-right: 50px;}
+.nav-link {color: var(--text-color) !important; margin: 0 0.8rem; font-weight: 600; position: relative; transition: color 0.3s ease; font-size: 1.2rem !important;}
+.nav-link:hover {color: #00a4d6 !important;}
+.navbar-toggler {border: none;}
+
 .contacts-section {
   background-color: var(--background-color);
   height: 100vh;
@@ -101,3 +114,9 @@
 .form-button:hover {
   background-color: var(--button-hover-color);
 }
+
+footer a {transition: color 0.3s ease;}
+footer a:hover {color: var(--button-hover-color);}
+footer h3, footer h5 {color: var(--footer-text-color);}
+footer p, footer li {font-size: 0.9rem;}
+footer i {font-size: 1rem;}
