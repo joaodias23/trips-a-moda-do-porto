@@ -1,3 +1,5 @@
+[![SVG Banners](https://svg-banners.vercel.app/api?type=glitch&text1=TMP&width=800&height=400)]
+
 # Project Overview
 
 The Trips À Moda Do Porto Project is a website developed as part of an assignment, with the goal of simulating the digital environment of a modern travel agency. The main focus of this project is on visual presentation and responsiveness, ensuring that the website adapts efficiently to different screen sizes, from desktop computers to mobile devices.
