@@ -22,16 +22,19 @@ It was designed to demonstrate best practices in web interface structure and sty
 
 # Project Showcase
 
-## Landing Page:
+## Home Page:
 
 
-## Accommodations Page:
+## Destinations Page:
 
 
-## Places Page:
+## Packages Page:
 
 
-## Contact Page:
+## Reservations Page:
+
+
+## Contacts Page:
 
 
 # Project Authors
