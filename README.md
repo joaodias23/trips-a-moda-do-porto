@@ -24,18 +24,27 @@ It was designed to demonstrate best practices in web interface structure and sty
 
 ## Home Page:
 
+![PageOne Gif](./READMEimg/1HOMEGIF.gif)
 
 ## Destinations Page:
 
+![PageTwo Gif](./READMEimg/2DESTINYGIF.gif)
 
 ## Packages Page:
 
+![PageThree Gif](./READMEimg/3PACKAGEGIF.gif)
 
 ## Reservations Page:
 
+![PageFour Gif](./READMEimg/4reserva.png)
 
-## Contacts Page:
+## Blog Page:
 
+![PageFive Gif](./READMEimg/5BLOGGIF.gif)
+
+## Blog Page:
+
+![PageSix Gif](./READMEimg/6contact.png)
 
 # Project Authors
 
