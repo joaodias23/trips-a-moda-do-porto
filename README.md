@@ -42,7 +42,7 @@ It was designed to demonstrate best practices in web interface structure and sty
 
 ![PageFive Gif](./READMEimg/5BLOGGIF.gif)
 
-## Blog Page:
+## Contacts Page:
 
 ![PageSix Gif](./READMEimg/6contact.png)
 
