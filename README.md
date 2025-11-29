@@ -1,17 +1,19 @@
 ![SVG Banners](https://svg-banners.vercel.app/api?type=glitch&text1=TMP🍛✈️&width=800&height=400)
 
+# Live Demo
+https://joaodias23.github.io/trips-a-moda-do-porto/
+
 # Project Overview
 
-The Trips À Moda Do Porto Project is a website developed as part of an assignment, with the goal of simulating the digital environment of a modern travel agency. The main focus of this project is on visual presentation and responsiveness, ensuring that the website adapts efficiently to different screen sizes, from desktop computers to mobile devices.
+The Trips À Moda Do Porto Project is a website developed as part of an assignment, with the goal of simulating the digital environment of a modern travel agency. The main focus of this project is on visual presentation and responsiveness, ensuring that the website adapts efficiently to different screen sizes, from desktop computers to mobile devices. To achieve this, we employed a mobile-first development methodology, meticulously structuring the CSS using Bootstrap classes to ensure maintainability across all six pages.
 
 It was designed to demonstrate best practices in web interface structure and styling, as well as to provide clear, intuitive, and visually appealing navigation for users.
 
 # Project Features
 
-- Responsive Layout
-- Interactive Forms
-- Modal Windows
-- Modern Styling
+- Client-Side Form Validation: Implemented using vanilla JavaScript to provide immediate user feedback and prevent malformed data submission.
+- Dynamic Modal Windows: Implemented to enhance the user experience for pop-up information without navigating away from the main page.
+- Responsive, Mobile-First Design: Achieved using CSS Grid/Flexbox in combination with Bootstrap to guarantee optimal performance on all device sizes.
 
 # Technologies Used
 
